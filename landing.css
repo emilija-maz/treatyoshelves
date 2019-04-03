@@ -1,0 +1,105 @@
+element.style {
+}
+@media (min-width: 768px)
+.site-wrapper-inner {
+    vertical-align: middle;
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+html, body {
+    height: 100%;
+    background-color: #333;
+    font-family: 'Oswald', sans-serif;
+}
+body {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    background: url(http://www.instruquest.com/clipart/backgrounds/tile/dotGridWhiteGray.gif);
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+html, body {
+    height: 100%;
+    background-color: #333;
+    font-family: 'Oswald', sans-serif;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+box-sizing:
+border-box
+;
+color:
+rgb(255, 255, 255)
+;
+display:
+table-cell
+;
+font-family:
+Oswald, sans-serif
+;
+font-size:
+14px
+;
+height:
+700.75px
+;
+line-height:
+20px
+;
+text-align:
+center
+;
+text-shadow:
+rgba(0, 0, 0, 0.5) 0px 1px 3px
+;
+text-size-adjust:
+100%
+;
+vertical-align:
+middle
+;
+width:
+1261px
+;
+-webkit-tap-highlight-color:
+rgba(0, 0, 0, 0)
+;
