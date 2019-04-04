@@ -21,21 +21,17 @@ def search():
 	return render_template("Search.html")
 
 @app.route("/email", methods=["POST"])
-def email():
-	form_data = request.form
-	print form_data["email"]
-	requests.post(
-		"https://api.mailgun.net/v3/sandboxf8a60abf48434795bd9e0fee08a8494f.mailgun.org/messages",
-        auth=("api", "f901c98b1d9032490412503076633c44-acb0b40c-e4f0c684"),
-        data={"from": " Your past self <mailgun@sandboxf8a60abf48434795bd9e0fee08a8494f.mailgun.org>",
-              "to": ["emilijamazuraite@gmail.com"],
-              "subject": "This is a test, don't panic",
-              "text": "Hi" +  form_data["name"] +"I am testing a flask file!"}
-		)
-              # "Hi {}, this is an email".format(form_data["name"])
-	return "All OK cool"
-
+def email ():
+    form_data=request.form
+    print form_data["email"]
+    requests.post(
+        "https://api.mailgun.net/v3/sandbox2da01c53ab0b4d2597aae47c7a5e477f.mailgun.org/messages",
+        auth=("api", "9e8dc86bae0e2701c4f8742169e2e9b2-7caa9475-44465c9e"),
+        data={"from": "Excited User <mailgun@sandbox2da01c53ab0b4d2597aae47c7a5e477f.mailgun.org>",
+            "to": ["rkag@st-andrews.ac.uk", "kl96@st-andrews.ac.uk"],
+            "subject": "Hello",
+            "text": "Testing some Mailgun awesomness!"})
+    return "Thank you!"
 
 
 app.run(debug=True)
-
