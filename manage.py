@@ -5,18 +5,20 @@ app = Flask("MyApp")
 
 @app.route("/")
 def hello():
-	return "Hello World"
+	return render_template("landingpage.html")
 
 @app.route("/<name>")
 def hello_name(name):
-	return render_template("landingpage.html", name = name.title())
+	return render_template("Search.html", name = name.title())
 	# by default it checks templates folder
 	# if name = None => it will say hello anonymous person
 
-@app.route("/")
-def serve_index():
-	return render_template("email.html")
-
+# @app.route("/")
+# def serve_index():
+# 	return render_template("email.html")
+@app.route('/search')
+def search():
+	return render_template("Search.html")
 
 @app.route("/email", methods=["POST"])
 def email():
