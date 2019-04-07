@@ -1,0 +1,222 @@
+h1{color:green;}
+body {
+ text-align: center;
+ background: #white;
+ background-size: cover;
+ background-position: center;
+ color: black;
+ font-family: Garamond;
+}
+
+p {
+ font-size: 18px;
+}
+
+p {
+ font-size: 18px;
+}
+h4 {
+  font-weight: 900;
+}
+
+input {
+ border: 0;
+<<<<<<< HEAD
+ padding: 0px;
+ font-size: 5px;
+=======
+ padding: 10px;
+ font-size: 18px;
+>>>>>>> ed9b579145308d207991b6cc069b901c96bf3531
+}
+input[type="submit"] {
+ background: red;
+ color: white;
+}
+
+.ul{
+  position: center;
+}
+
+.image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+h1 {
+    color: white;
+}
+h1 {
+   position: absolute;
+   top: 130px;
+   left: 0;
+   width: 100%;
+}
+h1 span {
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+h2 {
+   position: absolute;
+   top: 250px;
+   left: 0;
+   width: 100%;
+}
+h2 span {
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+.jumbotron {
+  background: #white;
+  padding-top: 25px;
+  min-height: 25px;
+  margin-bottom: 0;
+  background: #white;
+}
+
+.jumbotron h1 {
+  font-family: 'Vast Shadow', cursive;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.jumbotron h2 {
+  font-family: 'Vast Shadow', cursive;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.jumbotron .form-group {
+  line-height: 1em;
+}
+
+.jumbotron label {
+  color: white;
+}
+.jumbotron img {
+  margin-top: 50px;
+}
+
+
+.form {
+  width: 940px;
+}
+h2 {
+  margin-bottom: 1.5em;
+}
+
+#continent-nav {
+  width: 520px;
+  margin: auto;
+}
+
+#entries * {
+    box-sizing: border-box;
+}
+
+#entries body {
+    background-color: #white;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+#entries .main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#entries h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+#entries .row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+#entries .row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+#entries .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+#entries .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+#entries .content {
+    background-color: #white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+#entries .show {
+    display: block;
+}
+
+/* Style the buttons */
+#entries .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+#entries .btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+#entries .btn.active {
+  background-color: #666;
+   color: white;
+}
+
+.modal-content {
+  font-family: 'Vast Shadow', cursive;
+  color: green;
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+.container{
+  width:100%;
+}
+
+#the_form_button {
+  color: green;
+  font-size: 30px;
+}
