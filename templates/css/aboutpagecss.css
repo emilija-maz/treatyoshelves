@@ -41,44 +41,6 @@ p {
 		padding-top: 10px;
 }
 
-.AliaPhoto
-			{
-			padding-right: 30px;
-			padding-bottom: 30px;
-}
-
-
-.Laura {
-		padding-left: 40px;
-		padding-right: 30px;
-}
-
-.LauraPhoto {
-			padding-bottom: 20px;
-			padding-right: 30px;
-}
-
-
-.Katharine {
-		padding-left: 40px;
-		padding-right: 30px;
-		padding-bottom: 20px;
-
-}
-
-.KatharinePhoto
-			{padding-right: 30px;
-}
-
-.Eva {
-	padding-left: 40px;
-	padding-right: 30px;
-	padding-bottom: 20px;
-}
-
-.EvaPhoto
-		{padding-right: 30px;
-}
 
 
 input {
@@ -90,10 +52,6 @@ input {
 input[type="submit"] {
 		     			background: red;
 		     			color: white;
-}
-
-img {
-	float: left;
 }
 
 .fa {
