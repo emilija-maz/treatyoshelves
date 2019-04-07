@@ -20,15 +20,20 @@ def hello_name(name):
 def search():
 	return render_template("Search.html")
 
+print "What's your api?"
+api = raw_input()
+print "Thank you {}".format(api)
+
+
 @app.route("/email", methods=["POST"])
 def email ():
     form_data=request.form
     print form_data["email"]
     requests.post(
         "https://api.mailgun.net/v3/sandbox2da01c53ab0b4d2597aae47c7a5e477f.mailgun.org/messages",
-        auth=("api", "9e8dc86bae0e2701c4f8742169e2e9b2-7caa9475-44465c9e"),
+        auth="{}".format(api),
         data={"from": "Excited User <mailgun@sandbox2da01c53ab0b4d2597aae47c7a5e477f.mailgun.org>",
-            "to": ["rkag@st-andrews.ac.uk", "kl96@st-andrews.ac.uk"],
+            "to": [form_data["email"]],
             "subject": "Hello",
             "text": "Testing some Mailgun awesomness!"})
     return "Thank you!"
