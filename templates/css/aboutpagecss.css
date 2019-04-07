@@ -1,0 +1,125 @@
+h1 {
+	color:black;
+	font: Helvetica, 50px, Sans-Serif;
+	font-size: 50px;
+  font-style:inherit;
+  text-align: center;
+  padding-top: 65px;
+}
+
+h2 {
+	color:black;
+	font-family:Garamond;
+	font-size: 40px;
+	text-align: center
+}
+
+body {
+	background: url("blurbackground.jpg");
+	background-size: cover;
+	background-position: center;
+	font-family: Garamond;
+}
+
+p {
+	color:black;
+	font-size: 22px;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-left: 80px;
+}
+
+.Intro {
+		font-size: 20px;
+		text-align: center
+}
+
+.Alia {
+		padding-left: 40px;
+		padding-right: 30px;
+		padding-top: 10px;
+}
+
+.AliaPhoto
+			{
+			padding-right: 30px;
+			padding-bottom: 30px;
+}
+
+
+.Laura {
+		padding-left: 40px;
+		padding-right: 30px;
+}
+
+.LauraPhoto {
+			padding-bottom: 20px;
+			padding-right: 30px;
+}
+
+
+.Katharine {
+		padding-left: 40px;
+		padding-right: 30px;
+		padding-bottom: 20px;
+
+}
+
+.KatharinePhoto
+			{padding-right: 30px;
+}
+
+.Eva {
+	padding-left: 40px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+
+.EvaPhoto
+		{padding-right: 30px;
+}
+
+
+input {
+		border: 0;
+		padding: 10px;
+		font-size: 18px;
+}
+
+input[type="submit"] {
+		     			background: red;
+		     			color: white;
+}
+
+img {
+	float: left;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
