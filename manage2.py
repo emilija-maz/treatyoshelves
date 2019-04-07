@@ -17,7 +17,7 @@ def search():
 def share():
     return render_template("Share.html")
 
-@app.rout("/about")
+@app.route("/about")
 def about():
     return render_template("About.html")
 
