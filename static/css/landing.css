@@ -17,11 +17,20 @@ user agent stylesheet
 div {
     display: block;
 }
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
 body {
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
+
 html, body {
     height: 100%;
     background-color: #c15e95;
