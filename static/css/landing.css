@@ -1,13 +1,12 @@
-element.style {
+element.style {}
+
+@media (min-width: 768px) .site-wrapper-inner {
+  vertical-align: middle;
 }
 
-@media (min-width: 768px)
 .site-wrapper-inner {
-    vertical-align: middle;
-}
-.site-wrapper-inner {
-    display: table-cell;
-    vertical-align: top;
+  display: table-cell;
+  vertical-align: top;
 }
 
 .responsive {
@@ -15,24 +14,25 @@ element.style {
   height: auto;
 }
 
-
 #wrapper {
-    width: 1100px;
-    margin: 0 auto;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-user agent stylesheet
-div {
-    display: block;
+
+user agent stylesheet div {
+  display: block;
 }
+
 .container {
   border: 1px solid black;
 }
+
 .center {
   margin: auto;
   width: 50%;
@@ -45,8 +45,6 @@ nav {
   display: inline;
 }
 
-
-
 img {
   display: block;
   margin-left: auto;
@@ -55,51 +53,58 @@ img {
 }
 
 body {
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
 
 html, body {
-    height: 100%;
-    background-color: #fff;
-    font-family: 'Oswald', sans-serif;
+  height: 100%;
+  background-color: #fff;
+  font-family: 'Oswald', sans-serif;
 }
+
 body {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    padding-left: 100px;
-    background: url(https://www.pexels.com/photo/green-leaf-plant-663337/);
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  padding-left: 100px;
+  background: url(https://www.pexels.com/photo/green-leaf-plant-663337/);
 }
+
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 30px;
-    line-height: 1.42857143;
-    color: #efede6;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.42857143;
+  color: #efede6;
   ;
 }
+
 html, body {
-    height: 100%;
-    background-color: #efede6;
-    font-family: 'Oswald', sans-serif;
-    background: url(https://www.pexels.com/photo/green-leaf-plant-663337/);
+  height: 100%;
+  background-color: #efede6;
+  font-family: 'Oswald', sans-serif;
+  background: url(https://www.pexels.com/photo/green-leaf-plant-663337/);
 }
-html {
+
+/* html {
     font-size: 10px;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0); */
 }
+
 html {
-    font-family: sans-serif;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
+
 :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
