@@ -1,44 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="static/css/bootstrap.css">
-		<header class="text-center w3-bar w3-black">
-			<h1> Search Books </h1>
-</header>
-<nav>
+	<nav>
   <div class="navbar">
       <a href="about">About Us</a>
       <a href="search">Search</a>
       <a href="share">Share</a>
-    </div>
-    </nav>
+   </div>
+</nav>
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+		<header class="text-center w3-bar w3-black">
+			<h1> Share Books </h1>
+</header>
+
 
 <body>
 	<header class="text-center w3-bar w3-black">
-		<h2>What sort of book would you like?</h2>
+		<h2>Please enter the details of the book you'd like to share</h2>
 	</header>
-		<iframe src="https://www.google.com/maps/embed?pb=" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		
 		  </p>
-		</footer>
-	<table>
-        <thead>
-            <tr>
-                <th>Search for books near you!</th>
-                <th>What are your favourite genres?</th>
-            </tr>
-        </thead>
-    </table>
+		
   </div>
-	<p> Please enter your details </p>
 
-	<form method="post" action="/email">
-		Name:<br>
-		<input type="text" name="name">
+<div class="text-center w3-bar w3-black">
+
+	<form method="post" action="/share"  >
+		Title   : <input type="text" name="booktitle">  <br>
 		<br>
-		Email:<br>
-		<input type="text" name="email">
-		<input type="submit" value="Submit" id="submit-button">
+		<br>
+        Pages   : <input type="text" name="pages" /> <br>
+        <br>
+        <br>
+        Location: <input type = "text" name = "location" />
+        <br>
+        <input type="submit" name= "form" value="Submit" />
+        <br>
+        <br>
+
+		
 	</form>
+		<div>
+		{%  if booktitle %}
+			<br>
+			<br>
+			The book you submitted is: {{ booktitle }} 
+			<br>
+			<br>
+			Number of pages is: {{ pages }}
+
+			<br>
+			<br>
+			The book can be collected from: {{ location}}
+
+			<br>
+			<br>
+			<br>
+
+			<img src="static/images/full_book.jpg" alt="full book" style="width:700px;height:auto;">
+
+		{% else %}
+
+		<img src="static/images/empty_book.jpg" alt="empty book" style="width:700px;height:auto;">
+
+		{% endif %}
+
+		 
+		</div>
+
+</div>
+
+
+
+
+
 </body>
 </body>
 </html>
