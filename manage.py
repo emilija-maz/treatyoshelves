@@ -32,12 +32,13 @@ def email ():
     print form_data["email"]
     requests.post(
         "https://api.mailgun.net/v3/sandbox2da01c53ab0b4d2597aae47c7a5e477f.mailgun.org/messages",
-        auth="{}".format(api),
+        auth = ("api", "{}".format(apikey)),
         data={"from": "Excited User <mailgun@sandbox2da01c53ab0b4d2597aae47c7a5e477f.mailgun.org>",
             "to": [form_data["email"]],
             "subject": "Hello",
             "text": "Testing some Mailgun awesomness!"})
     return "Thank you!"
+
 
 
 app.run(debug=True)
