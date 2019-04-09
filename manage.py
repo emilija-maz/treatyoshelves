@@ -40,12 +40,14 @@ print ("What's your api?")
 api = raw_input()
 print ("Thank you {}".format(api))
 
+#Hello, Emilija here - I added brackets around print statements because error in terminal suggested it
+# when I tried to push it to heroku
 
 
 @app.route("/email", methods=["POST"])
 def email ():
     form_data=request.form
-    print form_data["email"]
+    (print form_data["email"])
     requests.post(
         "https://api.mailgun.net/v3/sandbox2da01c53ab0b4d2597aae47c7a5e477f.mailgun.org/messages",
         auth = ("api", "{}".format(api)),
