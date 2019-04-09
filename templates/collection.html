@@ -12,13 +12,14 @@
 
 </head>
 <body class="text-center w3-bar w3-black">
-
+<header> Our collection of books: </header>
+  
 
   <div>
 
     {% for i in book_list%}
     
-
+</div>
    Book title: {{i[0]}}
    <br>
    pages: {{i[1]}}
@@ -32,12 +33,6 @@
 
     {%endfor%}
 
-<!--   {% for list_value in book_list %}
-  {% for a_value in list_value %}
-    {{ a_value[0] }}
-  {% endfor %}
-{% endfor %}
- -->
 
 
   </div>
