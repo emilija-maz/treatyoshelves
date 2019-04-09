@@ -21,12 +21,19 @@ def share():
 def about():
     return render_template("About.html")
 
+@app.route("/collection")
+def collection():
+    return render_template("collection.html", book_list=book_list)
+
+global book_list
+book_list=[]
 
 @app.route("/share", methods=["POST"])
 def book():
     booktitle = request.form['booktitle']
     pages = request.form['pages']
     location = request.form['location']
+    book_list.append([booktitle, pages, location])
 
     #return  'You have submitted %s which has  %s  pages <br/> <a href="/"> Back Home</a>' % (title, pages)
     return render_template("Share.html", booktitle=request.form["booktitle"], pages =request.form["pages"], location =request.form["location"])

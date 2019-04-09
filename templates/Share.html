@@ -17,14 +17,95 @@
 	<link rel="stylesheet" href="static/css/bootstrap.css">
 		<header class="text-center w3-bar w3-black">
 			<h1> Share Books </h1>
-</header>
-
+</header> 
 
 <body>
-	<header class="text-center w3-bar w3-black">
-		<h2>Please enter the details of the book you'd like to share</h2><br>
-	</header>
 
+<div class="text-center w3-bar w3-black">
+
+	        {%  if booktitle %}
+			<header>
+            <h2>Many Thanks</h2><br>
+            </header>
+			{% else %}
+			<header>
+    		<h2>Please enter the details of the book you'd like to share</h2><br>
+    		</header>
+			{% endif %}
+	
+</div>
+	
+<div class="row" class="text-center w3-bar w3-black">
+	    <div class="column">
+	   		{%  if booktitle %}
+			<img src="static/images/full_book.jpg" alt="full book" style="width:500px;height:auto;">
+			{% else %}
+			<img src="static/images/empty_book.jpg" alt="empty book" style="width:500px;height:auto;">
+			{% endif %}
+		</div>
+		<div class = "column">
+			{%if booktitle%}
+			<br>
+			The book you submitted is: {{ booktitle }}
+			<br>
+			<br>
+			Number of pages is: {{ pages }}
+			<br>
+			<br>
+			The book can be collected from: {{ location}}
+			{% else %}
+			    
+					<form method="post" action="/share"  >
+					Title   : <input type="text" name="booktitle">  <br>
+					<br>
+					<br>
+			        Pages   : <input type="text" name="pages" /> <br>
+			        <br>
+			        <br>
+			        Location: <input type = "text" name = "location" />
+			        <br>
+	        		<input type="submit" name= "form" value="Submit" />
+	        		<br>
+	        		<br>
+	        		</form>
+		    {% endif %}
+		</div>
+		 <div class="column">
+	   		{%  if booktitle %}
+			<img src="static/images/full_book.jpg" alt="full book" style="width:500px;height:auto;">
+			{% else %}
+			<img src="static/images/empty_book.jpg" alt="empty book" style="width:500px;height:auto;">
+			{% endif %}
+		</div>
+		
+</div>
+
+
+<div class="text-center w3-bar w3-black">
+
+
+	Explore our collection <a href="collection">collection</a>
+	</div>
+
+
+
+
+		<div class="text-center w3-bar w3-black">
+
+	
+
+		
+	
+
+		
+	  </div>
+	  <div class="column">
+	    <div class="text-center w3-bar w3-black">
+	
+
+</div>
+	  </div>
+  </div>
 <div class="text-center w3-bar w3-black">
 
 	<form method="post" action="/share"  >

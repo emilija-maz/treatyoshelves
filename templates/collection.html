@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="static/css/bootstrap.css">
+<nav>
+  <div class="navbar">
+      <a href="/">Home</a>
+      <a href="search">Search</a>
+      <a href="share">Share</a>
+    </div>
+</nav>
+
+</head>
+<body class="text-center w3-bar w3-black">
+
+
+  <div>
+
+    {% for i in book_list%}
+    
+
+   Book title: {{i[0]}}
+   <br>
+   pages: {{i[1]}}
+   <br>
+   location: {{i[2]}}
+   <br>
+   <br>
+   <br>
+   <br>
+
+
+    {%endfor%}
+
+<!--   {% for list_value in book_list %}
+  {% for a_value in list_value %}
+    {{ a_value[0] }}
+  {% endfor %}
+{% endfor %}
+ -->
+
+
+  </div>
+
+
+
+</body>
