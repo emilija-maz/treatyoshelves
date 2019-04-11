@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="static/css/bootstrap.css">
-		<header class="text-center w3-bar w3-black">
-			<h1> Available books </h1>
+
+
+  <link rel="stylesheet" href="static/css/bootstrap.css">
+    <header class="text-center w3-bar w3-black">
+      <!-- <h1> SHARE PAGE </h1> -->
 </header>
 <nav>
   <div class="navbar">
-  	  <a href="">Main</a>
       <a href="about">About Us</a>
       <a href="search">Search</a>
-      <a href="share">Share</a>
-    </div>
-    </nav>
+      <a href="/">Home</a>
+      <a href="/share">Share</a>
+   </div>
+</nav>
+  <link rel="stylesheet" href="static/css/bootstrap.css">
+    <header class="text-center w3-bar w3-black">
+      <h1> How many books are you aiming to read this year? </h1>
+</header> 
 
 <body>
-	
+
+
+    <div class="text-center w3-bar w3-black">
+      
+    
+      {%  if peryear %}
+      You have read {{thusfar}} books thus far this year.
+      You should read {{monthly}} per month in the remaining time of the year to reach your goal.
+      You are {{remaining_books}} books away from your goal. 
+
+      {% else %}
+    
+      {% endif %}
+ 
+    </div>
+      
+    
+
+
+<div class="text-center w3-bar w3-black">
+  Explore our collection <a href="collection">collection</a>
+</div>
+
+
+
+
 
 
 

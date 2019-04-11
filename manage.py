@@ -41,10 +41,20 @@ def book():
     return render_template("Share.html", booktitle=request.form["booktitle"], pages =request.form["pages"], location =request.form["location"])
 
 
-@app.route("/books",)
-def books():
-    return  render_template("Books.html")
+@app.route("/books",methods=["POST"])
+def count_books():
+    peryear = float(request.form['peryear'])
+    thusfar = float(request.form['thusfar'])
+    month = float(request.form['month'])
+    remaining_books = peryear-thusfar
+    remaining_time=12 - month
 
+    monthly =remaining_books/remaining_time
+    return  render_template("Books.html", monthly = monthly, thusfar = request.form['thusfar'], peryear = request.form['peryear'], remaining_books = remaining_books, month = request.form['month'], remaining_time = remaining_time)
+
+@app.route("/", methods = ["GET"])
+def my_form():
+    return render_template("landingpage.html")
 # print "What's your api?"
 # api = raw_input()
 # print "Thank you {}".format(api)
