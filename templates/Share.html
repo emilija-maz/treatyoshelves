@@ -22,7 +22,6 @@
 <body>
 
 <div class="text-center w3-bar w3-black">
-
 	        {%  if booktitle %}
 			<header>
             <h2>Many Thanks</h2><br>
@@ -31,8 +30,7 @@
 			<header>
     		<h2>Please enter the details of the book you'd like to share</h2><br>
     		</header>
-			{% endif %}
-	
+			{% endif %}	
 </div>
 	
 <div class="row" class="text-center w3-bar w3-black">
@@ -82,76 +80,10 @@
 
 
 <div class="text-center w3-bar w3-black">
-
-
 	Explore our collection <a href="collection">collection</a>
-	</div>
-
-
-
-
-		<div class="text-center w3-bar w3-black">
-
-	
-
-		
-	
-
-		
-	  </div>
-	  <div class="column">
-	    <div class="text-center w3-bar w3-black">
-	
-
 </div>
-	  </div>
-  </div>
-<div class="text-center w3-bar w3-black">
-
-	<form method="post" action="/share"  >
-		Title   : <input type="text" name="booktitle">  <br>
-		<br>
-		<br>
-        Pages   : <input type="text" name="pages" /> <br>
-        <br>
-        <br>
-        Location: <input type = "text" name = "location" />
-        <br>
-				<br>
-        <input type="submit" name= "form" value="Submit" />
-        <br>
-        <br>
 
 
-	</form>
-		<div>
-		{%  if booktitle %}
-			<br>
-			The book you submitted is: {{ booktitle }}
-			<br>
-			<br>
-			Number of pages is: {{ pages }}
-
-			<br>
-			<br>
-			The book can be collected from: {{ location}}
-
-			<br>
-			<br>
-			<br>
-
-			<img src="static/images/full_book.jpg" alt="full book" style="width:700px;height:auto;">
-
-		{% else %}
-
-		<img src="static/images/empty_book.jpg" alt="empty book" style="width:700px;height:auto;">
-
-		{% endif %}
-
-
-		</div>
-
-</div>
 
 
 
